@@ -18,7 +18,7 @@ function App() {
   const [showSuccess, setShowSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const API_URL = 'http://localhost:5000/api';
+  const API_URL = 'https://visitor-management-backend.onrender.com/api';
 
   useEffect(() => {
     if (currentPage === 'records') {
