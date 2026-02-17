@@ -9,7 +9,10 @@ from pathlib import Path
 from config import EXCEL_FILE_PATH
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=[
+    "http://localhost:3000",
+    "https://visitor-management-system.vercel.app"  # your Vercel URL
+])
 
 # Database configuration
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///visitors.db'
